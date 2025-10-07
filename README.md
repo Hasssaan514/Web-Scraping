@@ -15,6 +15,11 @@ An intelligent web scraping application powered by Google's Gemini AI that extra
 - **🎨 Clean Interface** - User-friendly Streamlit web application
 - **🔧 Customizable** - Easy to modify extraction templates
 
+
+
+# 🌐 Live Demo
+Check out the live app here: [Streamlit App]([https://your-app-name.streamlit.app/](https://web-scraping-ht7puvm3yfejtczavynmj8.streamlit.app/))
+
 ## 📸 Screenshots
 
 <!-- Add screenshots here after deploying -->
