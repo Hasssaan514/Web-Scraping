@@ -113,6 +113,14 @@ driver = webdriver.Chrome(
 - Place in project folder
 - Update path in `scrape.py`
 
+
+## Setup ChromeDriver
+
+1. Download ChromeDriver: https://chromedriver.chromium.org/
+2. Extract to project folder
+3. Update path in `scrape.py`
+
+
 ### Running the Application
 
 ```bash
