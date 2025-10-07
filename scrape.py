@@ -1,22 +1,31 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
-import re
 import time
+import os
+import platform
 
 def scrape_website(website):
     print("Launching web browser...")
 
-    chrome_driver_path = r"C:\Users\HIqbal\OneDrive - Cedar Financial\Documents\VS code projects\PracticeExs\WebScraping1\chromedriver.exe"
-
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
+    options = Options()
+    options.add_argument('--headless')  # Run without GUI
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--window-size=1920,1080')
+    
+    # Detect if running locally or in cloud
+    if platform.system() == "Windows":
+        # Local Windows - use your chromedriver.exe
+        chrome_driver_path = "chromedriver.exe"
+        driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
+    else:
+        # Cloud/Linux - use system chromedriver
+        driver = webdriver.Chrome(options=options)
 
     try:
-        # Ensure website has http/https
         if not website.startswith("http://") and not website.startswith("https://"):
             website = "https://" + website
 
