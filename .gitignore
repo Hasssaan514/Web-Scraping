@@ -1,0 +1,37 @@
+# Environment variables
+.env
+*.env
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ChromeDriver and executables
+chromedriver.exe
+chromedriver
+*.exe
+chromedriver-win64/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
