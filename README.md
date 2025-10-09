@@ -18,7 +18,7 @@ An intelligent web scraping application powered by Google's Gemini AI that extra
 
 
 # 🌐 Live Demo
-Check out the live app here: (https://advancedaiwebscraper-3g2nodxwpgakprbadbjc3w.streamlit.app/)
+Check out the live app here: (https://web-scraping-ht7puvm3yfejtczavynmj8.streamlit.app/)
 
 ## 📸 Screenshots
 
